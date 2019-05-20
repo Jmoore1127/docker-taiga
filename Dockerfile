@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.6
 MAINTAINER Benjamin Hutchins <ben@hutchins.co>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV NGINX_VERSION 1.15.5-1~stretch
 
 RUN apt-key adv \
-  --keyserver hkp://pgp.mit.edu:80 \
+  --keyserver hkp://keyserver.ubuntu.com:80 \
+  --no-tty \
   --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
 
 RUN echo "deb http://nginx.org/packages/mainline/debian/ stretch nginx" >> /etc/apt/sources.list
