@@ -18,9 +18,9 @@ services:
       # To use an external database, simply update these and remove the postgres
       # service from this docker-compose.yml file
       TAIGA_DB_NAME: taiga
-      TAIGA_DB_HOST: host.docker.internal
-      TAIGA_DB_USER: postgres
-      TAIGA_DB_PASSWORD: ""
+      TAIGA_DB_HOST: analytics-db-ca-1a
+      TAIGA_DB_USER: taiga_user
+      TAIGA_DB_PASSWORD: "TaigaPassword2019"
       TAIGA_SLEEP: 1 # when the db comes up from docker, it is usually too quick
 
       # To use an external SMTP for emails, fill in these values:

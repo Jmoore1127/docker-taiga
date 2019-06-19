@@ -1,5 +1,5 @@
 FROM python:3.6
-MAINTAINER Benjamin Hutchins <ben@hutchins.co>
+MAINTAINER Jared Moore <jared.moore@getweave.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
